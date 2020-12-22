@@ -41,6 +41,7 @@
               href="#reserveForm"
               class="btn btn-info btn-lg mt-4 text-nowrap"
               role="button"
+              data-toggle="tooltip" title="Or call us at 1-206-555-1234"
               >Reserve Campsite
             </a>
           </div>
@@ -267,5 +268,10 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $(`[data-toggle="tooltip"]`).tooltip()
+      })
+    </script>
   </body>
 </html>
